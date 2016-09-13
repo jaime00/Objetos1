@@ -35,11 +35,31 @@ public class Fraccionario {
         this.denominador = denominador;
     }
 
-    public Fraccionario suma(Fraccionario f2) {
+    public Fraccionario Suma(Fraccionario f2) {
         double numerador = this.getNumerador() * f2.getDenominador() + this.getDenominador() * f2.getNumerador();
         double denominador = this.getDenominador() * f2.getDenominador();
-        Fraccionario f;
-        f = new Fraccionario(numerador, denominador);
+        Fraccionario f = new Fraccionario(numerador, denominador);
         return f;
     }
+
+    public Fraccionario Restar(Fraccionario f2) {
+        double numerador = this.getNumerador() * f2.getDenominador() - this.getDenominador() * f2.getNumerador();
+        double denominador = this.getDenominador() * f2.getDenominador();
+        Fraccionario f = new Fraccionario(numerador, denominador);
+        return f;
+    }
+
+    public Fraccionario Multiplicacion(Fraccionario f2) {
+        double numerador = this.getNumerador() * f2.getNumerador();
+        double denominador = this.getDenominador() * f2.getDenominador();
+        Fraccionario f = new Fraccionario(numerador, denominador);
+        return f;
+    }
+    public Fraccionario Dividir(Fraccionario f2){
+        double numerador = this.getNumerador() * f2.getDenominador();
+        double denominador = this.getDenominador() * f2.getNumerador();
+        Fraccionario f = new Fraccionario(numerador,denominador);
+        return f;
+    }
+
 }
